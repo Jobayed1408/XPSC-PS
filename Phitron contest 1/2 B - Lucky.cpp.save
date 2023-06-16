@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string s; cin>>x;
+	int sum1  = 0 ,  sum2 = 0;
+	for(int i = 0; i<s.size(); i++)
+	{
+		if(i<s.size()/2)
+		{
+			sum1+=( s[i] - '0');
+		}
+		else sum2+=( s[i] - '0' );
+	}
+	if(sum1)
+}

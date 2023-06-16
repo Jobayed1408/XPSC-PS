@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+const long long int N = 1e8 + 7;
+long long int freq[N];
+#define ll long long int
+int main()
+{
+	ll t; cin>> t;
+	while(t--)
+	{
+		ll x; cin>>x;
+		freq[x]++;
+	}
+	
+	for(ll i=0; i<N; i++)
+	{
+		if(freq[i] == 1) 
+		{
+			cout<<i<<endl;
+			break;
+		}
+	}
+	
+}

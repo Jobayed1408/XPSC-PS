@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t; cin >>t;
+	while(t--)
+	{
+		int n,k;
+		 k = min((int)k , 61);
+		 ll x = (1ll<<k);
+		 ll y = n+1ll;
+		 
+		 
+	}
+}

@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string s1,s2;
+	cin>>s1>>s2;
+	int n = s1.size();
+	int k = s2.size();
+	int fr[26] = {0};
+	int fr2[26] = {0};
+	int j = 0, ans=0;
+	for(auto ch : s2)
+	{
+		fr[ch - 'a']++;
+	}
+	for(int i=0;i<n-k; i++)
+	{
+		while(j<n)
+		{
+			fr2[s1[j] - 'a']++;
+			if(j < k-1)
+			{
+				
+				j++;
+			}
+			else{
+				bool flag = true;
+				for(int v=0; v<26; v++)
+				{
+					if(s1[v] != s2[v]){
+						flag = false;
+						break;
+					}
+				}
+				if(flag) ans++;
+				i++;
+				j++;
+			}
+		}
+		
+	}
+	cout<<ans<<" ";
+	
+}
