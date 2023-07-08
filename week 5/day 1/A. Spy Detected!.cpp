@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t; cin>>t;
+	while(t--)
+	{
+		int n; cin>>n;
+		int arr[n];
+		int freq[100+10];
+		for(int i=0; i<110; i++)
+			freq[i] = 0;
+//		map<int , int>mp;
+		for(int i=0; i<n; i++)
+		{
+			cin>>arr[i];
+//			int x; cin>>x;
+			freq[arr[i]]++;
+		}
+		
+//		for(auto i : mp)
+//		{
+//			if(i.second == 1)
+//			cout<<i.second<<" ";
+//		}
+		
+//		int c=0;
+		for(int i=0; i<110; i++)
+		{
+			if( freq[arr[i]] == 1 )
+			{
+				cout<< i+1<<endl;
+				break;
+			}
+		}
+	}
+}
