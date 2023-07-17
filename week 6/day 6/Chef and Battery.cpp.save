@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t; cin>>t; 
+	while(t--)
+	{
+		int ans=0 , n; cin>>n;
+//		if(n == 50) cout<<0<<endl;
+		else if(n<50) 
+		{
+			if(n%2 == 0) ans = (50 - n)/2;
+			else {
+				int k = 50-n;
+				ans = k/2+3;
+			}
+		}
+		else 
+		{
+			int a = abs(n-50);
+//			if(n%2 != 0)
+//			{
+				if(a%3 == 0) ans = a/3;
+				else {
+					int k =50+a%3;
+					int s = a/3;
+					if(k == 52) s+=4;
+					else s+=2;
+					ans = s;
+				}
+//			}
+			
+		}
+		cout<<ans<<endl;
+	}
+}
