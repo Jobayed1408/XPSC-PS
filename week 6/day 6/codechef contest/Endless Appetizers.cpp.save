@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t; cin>>t;
+	while(t--)
+	{
+		int x,y,z;
+		cin>>x>>y>>z;
+		int k = x+()
+//		double p = ceil(1.0*x / y);
+//		
+//		int q = ceil((1.0* z / 30) / y);
+		int r = p+q;
+		
+		
+		cout<<r<<endl;
+		
+	}
+}
