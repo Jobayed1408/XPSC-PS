@@ -15,11 +15,12 @@ int main()
 		prefix[r+1]--;
 	}
 	long long sum =0 , ans = 0;
-	for(for auto[idx , value] : prefix)
+	for(auto[idx , value] : prefix)
 	{
-		cout << sum << " ";
 		sum += value; 
+//		cout << sum << " ";
 		ans = max(ans , sum);
 	}
-	cout << ans << endl;
+	if(ans<=2) cout << "Yes\n" ;
+	else cout << "No\n";
 }

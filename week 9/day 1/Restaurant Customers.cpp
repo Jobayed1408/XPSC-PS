@@ -21,6 +21,5 @@ int main()
 //		cout << sum << " ";
 		ans = max(ans , sum);
 	}
-	if(ans<=2) cout << "Yes\n" ;
-	else cout << "No\n";
+	 cout << ans  << "\n" ;
 }
