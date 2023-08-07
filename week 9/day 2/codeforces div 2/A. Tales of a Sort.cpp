@@ -9,11 +9,11 @@ int main()
 		int n; cin>>n;
 		int ar[n];
 		for(int i=0; i<n; i++) cin>> ar[i];
-//		bool b= false;
+		bool b= false;
 //		int ma = ar[0] , mi = ar[0];
 //		int max_index = 0, min_index = 0;
-//		for(int i=1; i<n; i++) 
-//		{
+		for(int i=1; i<n; i++) 
+		{
 //			if(ar[i] > ma)
 //			{
 //				ma = ar[i];
@@ -24,11 +24,11 @@ int main()
 //				mi = ar[i];
 //				min_index = i;
 //			}
-//			if(ar[i]< ar[i-1])
-//			{
-//				b = true; 
-//			}
-//		}
+			if(ar[i]< ar[i-1])
+			{
+				b = true; 
+			}
+		}
 		int ans  = 0;
 //		for(int i=0; i<n; i++)
 //		{
