@@ -1,18 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-	int t; cin>> t;
-	while(t--)
-	{
-		int n; cin>> n;
-		n = (n*(n-1))/2;
-		int ar[n];
-		for(int i=0; i<n; i++)
-		{
-			cin >> ar[i];
-		}
-		sort(ar, ar+n);
-	}
+    int t;cin>>t;
+    while(t--)
+    {
+        int n;cin>>n;
+        int m=n*(n-1)/2,b[m];
+        for(int i=0;i<m;i++)cin>>b[i];
+        sort(b,b+m);
+        for(int i=0;i<m;i+=--n)
+	   {
+	   	cout << i << " " <<  n <<" "<<b[i]<<endl;
+	   }
+        cout<<"1000000000\n";
+    }
 }
