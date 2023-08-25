@@ -7,13 +7,13 @@ void solve()
 	bool b = 0;
 	if(x == 1 and k==1) cout << "No\n";
 	else if(x==1 and k==2 and ((n%k)!=0)) cout << "No\n";
-	else if( n== k) cout << "No\n";
+//	else if( n== k) cout << "No\n";
 	else 
 	{
 		cout << "Yes\n";
-		cout << n << endl; 
 		if(x != 1)
 		{
+			cout << n << endl; 
 			for(int i=0; i<n; i++)
 				cout << 1 << " ";
 		}
