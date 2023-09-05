@@ -4,7 +4,7 @@ using namespace std;
 void solve()
 {
 	int n; cin>> n;
-	map<pair<int , int >> mp;
+	map<int , int > mp;
 	int ar[n+1][n];
 	for(int i=1; i<=n; i++)
 	{
@@ -18,14 +18,14 @@ void solve()
 			
 		}
 	}
-	int ma  = INT_MIN , f;
+	int ma  = INT_MIN , f = 4;
 	int i = 1;
 //	cout << mp[1] <<  " " << mp[2] << endl;
 	for(i  = 1; i<= mp.size(); i++)
 	{
 		int b = 0;
-//		cout << mp[i]<<  " ";
-		b = max(b , mp[i].first);
+		cout << mp[i]<<  " ";
+		b = max(b , mp[i]);
 		if(b > ma)
 		{
 			ma = b;
@@ -44,7 +44,7 @@ void solve()
 	{
 		if(k[i] == 0) d = i;
 	}
-//	cout << "D = " <<  d << endl;
+	cout << "D = " <<  d << endl;
 	cout << ar[1][1] << " " << f << endl;
 	if(ar[1][1] == f)
 	{
